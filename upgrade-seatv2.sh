@@ -13,11 +13,11 @@ echo
 echo 
 echo " * Make a mysql backup, this can take awhile"
 # Perform a mysqldump without a password prompt?
-cd /home/camadi/mysql_backups/; sudo mysqldump -u root -p seat > seat$(date +"%Y%m%d").sql >>$LOGFILE
-#cd /home/camadi/mysql_backups/; sudo mysqldump -u root --password="edew1gbb" seat > seat$(date +"%Y%m%d").sql
+cd /home/userx/mysql_backups/; sudo mysqldump -u root -p seat > seat$(date +"%Y%m%d").sql >>$LOGFILE
+#cd /home/camadi/mysql_backups/; sudo mysqldump -u root --password="xxxxxxx" seat > seat$(date +"%Y%m%d").sql
 echo " * Mysql Backup of Database is now done"
 echo " * Mysql Backup Status "
-ls -ltr /home/camadi/mysql_backups/
+ls -ltr /home/userx/mysql_backups/
 echo " * Start SeATv2 Upgrader"
 read -p "Are you sure you want to continue? <y/N> " prompt
 if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]
